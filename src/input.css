@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: 'DM sans', sans-serif;
+}
+
+.course-title:after{
+    @apply w-5 h-2 bg-cream-200 top-0 left-0
+}
+
+.card-category{
+    @apply flex items-center gap-5 shadow-md px-3 py-4;
+    box-shadow: rgba(149, 157, 165, 0.1) 0px 4px 30px;
+}
+
+.navbar-fixed{
+    @apply fixed z-[9999];
+}
+
+.hamburger-line{
+    @apply w-[30px] h-[2px] my-2 block bg-black;
+}
+
+.hamburger-active > span:nth-child(1){
+    @apply rotate-45 ;
+}
+.hamburger-active > span:nth-child(2){
+    @apply scale-0;
+}
+.hamburger-active > span:nth-child(3){
+    @apply -rotate-45 ;
+    
+}
+.underline-text{
+    @apply inline-block relative;
+}
+.underline-text:before{
+    @apply content-[''] absolute bg-cream-200 bg-opacity-80 -z-10 bottom-0 w-full h-4;
+
+}
+
+.active{
+    @apply text-black py-2 px-3 font-semibold;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 4px 30px 0px;
+}
